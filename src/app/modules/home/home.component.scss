@@ -1,3 +1,7 @@
+:host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+}
+
 .home-container {
     max-width: 800px;
     padding: 25px;
@@ -57,7 +61,8 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #24292e;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 80%, transparent);
     color: #fff;
     padding: 10px;
     margin-top: 60px;

@@ -1,6 +1,12 @@
+:host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+}
+
 mat-toolbar {
     justify-content: space-between;
-    background-color: #24292e;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 80%, transparent);
+    color: #fff;
 }
 
 .logo {
