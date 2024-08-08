@@ -1,0 +1,42 @@
+<div class="planner-mission-container">
+    <div class="form-container">
+        <form [formGroup]="missionForm" (submit)="onSubmit()" #missionFormDirective="ngForm">
+            <mat-form-field class="form-field" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="missionName" type="text">
+                @if (control['missionName'].hasError('required')) {
+                <mat-error>Mission name is <strong>required</strong></mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field class="form-field" appearance="outline">
+                <mat-label>x</mat-label>
+                <input matInput formControlName="xCoordinate" type="number">
+                @if (control['xCoordinate'].hasError('required')) {
+                <mat-error>The X Coordinate is <strong>required</strong></mat-error>
+                }
+                @if (control['xCoordinate'].hasError('max')) {
+                <mat-error>Values must not exceed 99</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field class="form-field" appearance="outline">
+                <mat-label>y</mat-label>
+                <input matInput formControlName="yCoordinate" type="number">
+                @if (control['yCoordinate'].hasError('required')) {
+                <mat-error>The Y Coordinate is <strong>required</strong></mat-error>
+                }
+                @if (control['xCoordinate'].hasError('max')) {
+                <mat-error>Values must not exceed 99</mat-error>
+                }
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit" [disabled]="missionForm.invalid">Add</button>
+        </form>
+    </div>
+</div>
+<ng-container>
+    <mat-error>
+        @if (missionForm.errors?.['duplicateMission']) {
+        {{ missionForm.errors?.['duplicateMission'] }}
+        }
+    </mat-error>
+</ng-container>

@@ -1,0 +1,106 @@
+<div class="home-container">
+    <h1>Welcome to Ana's Challenge 'Mission Planner'</h1>
+    <p class="app-description"> I have built a mini-app that provides a simplified mission planning capability,
+        empowering operators to
+        create and visualise robot movement.</p>
+
+    <h2>How to run the app? 🚀</h2>
+    <ol>
+        <li>
+            <strong>Clone the Repository:</strong>
+            <pre (click)="copyToClipboard('git clone https://github.com/aanastanciu/robby-the-bot.git')">
+                <code matTooltip="Copy to clipboard">git clone https://github.com/aanastanciu/robby-the-bot.git</code>
+                <mat-icon>filter_none</mat-icon>
+            </pre>
+        </li>
+        <li>
+            <strong>Install Dependencies:</strong>
+            <pre (click)="copyToClipboard('npm install')">
+                <code matTooltip="Copy to clipboard" >npm install</code>
+                <mat-icon>filter_none</mat-icon>
+            </pre>
+        </li>
+        <li>
+            <strong>Run the Application:</strong>
+            <pre (click)="copyToClipboard('ng serve')">
+                <code matTooltip="Copy to clipboard" >ng serve</code>
+                <mat-icon>filter_none</mat-icon>
+            </pre>
+        </li>
+    </ol>
+    <h2>Features</h2>
+</div>
+
+<div class="features-container">
+    <mat-accordion>
+        <!-- Home Page-->
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h3>
+                        <strong>Home Page</strong>
+                    </h3>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <p>The <strong>Home Page</strong> contains instructions on how to install and use the application,
+                        providing a quick
+                        start guide for new users.</p>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ul>
+                <li><strong>Logo:</strong> Clicking on the logo redirects to the Home page.</li>
+                <li><strong>Hamburger Menu Icon:</strong> Clicking on the hamburger menu icon opens a menu containing
+                    all available pages.</li>
+                <li><strong>Share Button:</strong> Clicking on the share button redirects you to my RobbyTheBot
+                    GitHub
+                    repository.
+                </li>
+            </ul>
+        </mat-expansion-panel>
+
+        <!-- Planner Page-->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h3><strong>Planner Page</strong></h3>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <p>The <strong>Player Page</strong> is used to deploy and monitor missions created on the Planner
+                        page.</p>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ul>
+                <li><strong>Mission Creation:</strong> Users can initiate a mission by entering a name and defining the
+                    robot's destination using X and Y coordinates.</li>
+                <li><strong>Mission Table:</strong> Created missions are presented in a table format for straightforward
+                    viewing and management.</li>
+            </ul>
+        </mat-expansion-panel>
+
+
+        <!-- Player Page-->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h3><strong>Player Page</strong></h3>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <p>The <strong>Planner Page</strong> allows users to create missions for the robot.</p>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ul>
+                <li><strong>Deploy Missions:</strong> Users can initiate the created mission.</li>
+                <li><strong>Play Button:</strong> Initiates the animation, showing the path taken by the robot.</li>
+                <li><strong>Stop Button:</strong> Aborts the mission.</li>
+            </ul>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="footer">This guide offers an overview of the key features and installation process of the Anybotics Mission
+    Planner application. For more in-depth information and the latest updates, please consult the project's
+    documentation that you may view <strong><a href="https://github.com/aanastanciu/robby-the-bot.git"
+            target="_blank">here</a></strong>.
+</div>

@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <div class="action-menu">
+        <img src="../../assets/robby.jpg" (click)="navigate('/home')" class="logo" alt="logo" />
+        <button mat-icon-button [matMenuTriggerFor]="menu" style="color: #fff;">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="action-text">Mission Planner</span>
+    </div>
+    <div>
+        <a href="https://code.anymal.com/coding-challenge/sergiu-stanciu" target="_blank">
+            <button mat-icon-button style="color: #fff;">
+                <mat-icon>share</mat-icon>
+            </button>
+        </a>
+    </div>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    @for (navbarItem of navbarItems; track navbarItem.name) {
+    <button mat-menu-item (click)="navigate(navbarItem.route)">
+        {{ navbarItem.name }}
+    </button>
+    }
+</mat-menu>

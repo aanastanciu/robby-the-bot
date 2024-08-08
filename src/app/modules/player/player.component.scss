@@ -1,0 +1,76 @@
+.player-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.player-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h3 {
+        color: #000000;
+    }
+}
+
+.player-box {
+    .player-display {
+        position: relative;
+        height: 100%;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+
+        .milestones {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #95aabd;
+            border: 1px solid black;
+            border-radius: 50%;
+            font-size: 10px;
+            cursor: pointer;
+
+            &-ids {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3px;
+            }
+        }
+
+        .robot {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+        &>button {
+            cursor: pointer;
+        }
+    }
+}
+
+.no-missions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+
+    .redirect-link {
+        color: blue;
+        cursor: pointer;
+    }
+}

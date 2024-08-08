@@ -1,0 +1,14 @@
+.mission-table {
+    border: 1px solid black;
+}
+
+.table-action-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.no-missions {
+    text-align: center;
+    font-weight: bold;
+}

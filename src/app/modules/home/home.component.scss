@@ -1,0 +1,67 @@
+.home-container {
+    max-width: 800px;
+    padding: 25px;
+    margin: 0 auto;
+    height: 72%;
+}
+
+.app-description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #000000;
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+ol>li {
+    margin: 20px;
+}
+
+ul>li {
+    margin: 20px;
+}
+
+pre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24292e;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+
+    mat-icon {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+code {
+    font-family: monospace;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24292e;
+    color: #fff;
+    padding: 10px;
+    margin-top: 60px;
+    font-size: 12px;
+    height: 50px;
+
+}
